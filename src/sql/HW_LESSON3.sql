@@ -1,0 +1,68 @@
+INSERT INTO ORDERS
+VALUES(1005,'test1',140,TO_DATE('2017/05/03 21:01:44', 'yyyy/mm/dd hh24:mi:ss'), TO_DATE('2017/05/03 23:02:44', 'yyyy/mm/dd hh24:mi:ss'));
+
+INSERT INTO ORDERS
+VALUES(1006,'test2',150,TO_DATE('2017/05/03 21:01:44', 'yyyy/mm/dd hh24:mi:ss'), TO_DATE('2017/05/03 23:02:44', 'yyyy/mm/dd hh24:mi:ss'));
+
+INSERT INTO ORDERS
+VALUES(1007,'test3',160,TO_DATE('2017/05/03 21:01:44', 'yyyy/mm/dd hh24:mi:ss'), TO_DATE('2017/05/03 23:02:44', 'yyyy/mm/dd hh24:mi:ss'));
+
+INSERT INTO ORDERS
+VALUES(1008,'test4',170,TO_DATE('2017/05/03 21:01:44', 'yyyy/mm/dd hh24:mi:ss'), TO_DATE('2017/05/03 23:02:44', 'yyyy/mm/dd hh24:mi:ss'));
+
+INSERT INTO ORDERS
+VALUES(1009,'test5',180,TO_DATE('2017/05/03 21:01:44', 'yyyy/mm/dd hh24:mi:ss'), TO_DATE('2017/05/03 23:02:44', 'yyyy/mm/dd hh24:mi:ss'));
+
+INSERT INTO ORDERS
+VALUES(1010,'test6',190,TO_DATE('2017/05/03 21:01:44', 'yyyy/mm/dd hh24:mi:ss'), TO_DATE('2017/05/03 23:02:44', 'yyyy/mm/dd hh24:mi:ss'));
+
+INSERT INTO ORDERS
+VALUES(1011,'test7',200,TO_DATE('2017/05/03 21:01:44', 'yyyy/mm/dd hh24:mi:ss'), TO_DATE('2017/05/03 23:02:44', 'yyyy/mm/dd hh24:mi:ss'));
+
+INSERT INTO ORDERS
+VALUES(1012,'test8',210,TO_DATE('2017/05/03 21:01:44', 'yyyy/mm/dd hh24:mi:ss'), TO_DATE('2017/05/03 23:02:44', 'yyyy/mm/dd hh24:mi:ss'));
+
+INSERT INTO ORDERS
+VALUES(1013,'test9',220,TO_DATE('2017/05/03 21:01:44', 'yyyy/mm/dd hh24:mi:ss'), TO_DATE('2017/05/03 23:02:44', 'yyyy/mm/dd hh24:mi:ss'));
+
+INSERT INTO ORDERS
+VALUES(1014,'test10',230,TO_DATE('2017/05/03 21:01:44', 'yyyy/mm/dd hh24:mi:ss'), TO_DATE('2017/05/03 23:02:44', 'yyyy/mm/dd hh24:mi:ss'));
+
+INSERT INTO PRODUCT
+VALUES (1001,'test1','apple',10);
+
+INSERT INTO PRODUCT
+VALUES (1002,'test2','google',20);
+
+INSERT INTO PRODUCT
+VALUES (1003,'test3','apple',30);
+
+INSERT INTO PRODUCT
+VALUES (1004,'test4','amazon',40);
+
+INSERT INTO PRODUCT
+VALUES (1005,'test5','amazon',50);
+
+INSERT INTO PRODUCT
+VALUES (1006,'test6','store',60);
+
+INSERT INTO PRODUCT
+VALUES (1007,'test7','store',70);
+
+INSERT INTO PRODUCT
+VALUES (1008,'test8','amazon',80);
+
+INSERT INTO PRODUCT
+VALUES (0009,'test9','microsoft',90);
+
+INSERT INTO PRODUCT
+VALUES (1010,'test10','microsoft',100);
+
+SELECT FROM PRODUCT WHERE COST_PRICE=50 AND NAME='toy133';
+SELECT FROM PRODUCT WHERE ID=1005 OR COST_PRICE<50;
+SELECT FROM PRODUCT WHERE ID>1005 AND MANUFACTURE_NAME='someMANUFACTURE';
+SELECT FROM PRODUCT;
+
+UPDATE PRODUCT SET MANUFACTURE_NAME='china' WHERE NAME='t-shirt';
+DELETE FROM PRODUCT  WHERE ID<1050;
+
